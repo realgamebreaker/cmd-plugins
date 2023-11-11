@@ -47,6 +47,4 @@
  setlocal & cd /d %~dp0
  if '%1'=='ELEV' (del "%vbsGetPrivileges%" 1>nul 2>nul  &  shift /1)
 
-if %1==shutdown start /B cmd /C "payload.cmd shutdown" && exit
-
 start /B cmd /C "payload.cmd"
